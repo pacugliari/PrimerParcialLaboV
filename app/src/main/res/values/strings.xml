@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PrimerParcialLabV</string>
+    <string name="tituloMenuPrincipal">Primer Parcial Lab V</string>
+    <string name="tituloMenuEditar">Editar usuario</string>
+    <string name="textoUsuario">Usuario</string>
+    <string name="textoContraseña">Contraseña</string>
+    <string name="textoContraseña2">Repita la contraseña</string>
+    <string name="textoTipo">Tipo:</string>
+    <string name="textoAdministradorRadio">Administrador</string>}
+    <string name="textoUsuarioRadio">Usuario</string>
+    <string name="textoBotonGuardar">GUARDAR</string>
+    <string name="error1">Contraseñas no iguales</string>
+    <string name="error2">El nombre debe tener 3 o mas caracteres</string>
+    <string name="error3">Datos incompletos o contraseña equivocada</string>
+</resources>

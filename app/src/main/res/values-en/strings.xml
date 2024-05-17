@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FirstPartialLabV</string>
+    <string name="tituloMenuPrincipal">First Partial Lab V</string>
+    <string name="tituloMenuEditar">Edit User</string>
+    <string name="textoUsuario">User</string>
+    <string name="textoContraseña">Password</string>
+    <string name="textoContraseña2">Repeat Password</string>
+    <string name="textoTipo">Type:</string>
+    <string name="textoAdministradorRadio">Administrator</string>
+    <string name="textoUsuarioRadio">User</string>
+    <string name="textoBotonGuardar">SAVE</string>
+    <string name="error1">Passwords do not match</string>
+    <string name="error2">Name must be 3 or more characters</string>
+    <string name="error3">Incomplete data or wrong password</string>
+</resources>

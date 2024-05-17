@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|start"
+    android:padding="16dp">
+
+    <!-- Usuario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textoUsuario"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/inputNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Contraseña -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textoContraseña"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <!-- Repetir Contraseña -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textoContraseña2"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/inputPassword2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <!-- Tipo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textoTipo"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/inputTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/inputAdministrador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textoAdministradorRadio"
+                android:tag="@string/textoAdministradorRadio"/>
+
+            <RadioButton
+                android:id="@+id/inputUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textoUsuarioRadio"
+                android:tag="@string/textoUsuarioRadio"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/botonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textoBotonGuardar"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <!--NOMBRE Y APELLIDO FORM-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_weight="0.85"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoUsuario"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/inputNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            >
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoContraseña"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            >
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoContraseña2"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/inputPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            >
+
+        </EditText>
+
+        <!--SEXO FORM-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/textoTipo"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+
+            <RadioGroup
+                android:id="@+id/inputTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/inputAdministrador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoAdministradorRadio"
+                    android:tag="@string/textoAdministradorRadio"/>
+
+                <RadioButton
+                    android:id="@+id/inputUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoUsuarioRadio"
+                    android:tag="@string/textoUsuarioRadio"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <!--BUTTON-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top"
+            >
+            <Button
+                android:id="@+id/botonGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textoBotonGuardar"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                >
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
